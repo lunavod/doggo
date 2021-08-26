@@ -1,0 +1,36 @@
+{
+  "name": "doggo",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc",
+    "pretty": "prettier --write \"src/**/*.ts\""
+  },
+  "bin": {
+    "doggo": "./dist/cli.js"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "class-transformer": "^0.4.0",
+    "class-validator": "^0.13.1",
+    "commander": "^8.1.0",
+    "glob": "^7.1.7",
+    "inquirer": "^8.1.2",
+    "js-convert-case": "^4.1.2",
+    "js-yaml": "^4.1.0",
+    "pluralize": "^8.0.0",
+    "ts-node": "^10.2.1",
+    "twig": "^1.15.4",
+    "typescript": "^4.3.5"
+  },
+  "devDependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/js-yaml": "^4.0.3",
+    "@types/node": "^16.7.2",
+    "prettier": "^2.3.2",
+    "rimraf": "^3.0.2",
+    "tsc": "^2.0.3"
+  }
+}
